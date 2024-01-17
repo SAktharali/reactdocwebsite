@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/*-------------------------------------header------------------------- */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+.f-logo {
+  font-weight: 700;
+}
+.header-login-btn {
+  border-radius: 50px;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid green;
+}
+/*-----------------------------home-----------------------------*/
+.home-header-section {
+  background-image: url("./assets/images/doctors-bg.jpg");
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-home-text {
+  font-weight: 600;
+}
+.home-btn {
+  border-radius: 100px !important;
+}
+.line-yellow {
+  border-bottom: 5px solid yellow;
+  width: 50px;
+}
+.line-purple {
+  border-bottom: 5px solid purple;
+  width: 50px;
+}
+.line-green {
+  border-bottom: 5px solid green;
+  width: 55px;
+}
+/*--------------------------services--------------------------------*/
+.center {
+  margin-left: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
+}
+.center:hover {
+  background-color: rgb(71, 71, 163);
+  color: white;
+}
+/*-----------------------------about---------------------------------*/
+.about-learn-btn {
+  border-radius: 50px;
+}
+/*----------------------feature--------------------------------------------*/
+.learn-btn-feature {
+  border-radius: 50px;
+}
+.doc-center {
+  margin-left: 90px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
+}
+.doc-center:hover {
+  background-color: rgb(71, 71, 163);
+  color: white;
+}
+/*-----------------------footer--------------------------------------------------*/
+.border {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 6px;
+  border-radius: 40%;
+}
+.border:hover {
+  background-color: blueviolet;
+  color: whitesmoke;
+}
+footer > a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.fa-brands {
+  font-size: 1rem;
+}
+
+/* spinner loader*/
+
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  height: 100vh;
+  z-index: 9999;
+}
