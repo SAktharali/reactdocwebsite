@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
 });
 
 // Start the server
+connectDB();
 app.listen(port, () => {
-  connectDB();
   console.log(`Server is running on ${port}`);
 });
