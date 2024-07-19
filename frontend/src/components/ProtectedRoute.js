@@ -15,7 +15,7 @@ function ProtectedRoute({ children }) {
     try {
       dispatch(showLoading());
       const res = await axios.post(
-        "http://localhost:7000/api/users/getUserData",
+        `${process.env.REACT_APP_BACKEND_URL}/api/users/getUserData`,
         { token: localStorage.getItem("token") },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },

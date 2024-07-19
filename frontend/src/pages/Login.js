@@ -50,10 +50,10 @@ const Login = () => {
       try {
         dispatch(showLoading());
         const response = await axios.post(
-          "http://localhost:7000/api/users/login",
+          `${process.env.REACT_APP_BACKEND_URL}/api/users/login`,
           formData
         );
-
+console.log(`${process.env.REACT_APP_BACKEND_URL}`);
         dispatch(hideLoading());
         if (response.data.success) {
           toast.success(response.data.message);

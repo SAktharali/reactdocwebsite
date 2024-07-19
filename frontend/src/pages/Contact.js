@@ -42,7 +42,7 @@ const Contact = () => {
       try {
         const authToken = localStorage.getItem("token");
         const res = await axios.post(
-          "http://localhost:7000/api/contact/postContact",
+          `${process.env.REACT_APP_BACKEND_URL}/api/contact/postContact`,
           formData,
           {
             headers: {

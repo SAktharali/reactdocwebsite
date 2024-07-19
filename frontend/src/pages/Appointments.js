@@ -98,7 +98,7 @@ const Appointments = () => {
         const authToken = localStorage.getItem("token");
 
         const res = await axios.post(
-          "http://localhost:7000/api/appointments/book",
+          `${process.env.REACT_APP_BACKEND_URL}/api/appointments/book`,
           {
             ...formData,
             date: date,

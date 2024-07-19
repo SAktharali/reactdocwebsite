@@ -10,7 +10,7 @@ const Profile = () => {
       try {
         const authToken = localStorage.getItem("token");
         const response = await axios.get(
-          "http://localhost:7000/api/appointments/getAppointments",
+          `${process.env.REACT_APP_BACKEND_URL}/api/appointments/getAppointments`,
           {
             headers: { Authorization: `Bearer ${authToken}` },
           }

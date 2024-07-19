@@ -62,7 +62,7 @@ const Register = () => {
         dispatch(showLoading());
 
         const response = await axios.post(
-          "http://localhost:7000/api/users/register",
+          `${process.env.REACT_APP_BACKEND_URL}/api/users/register`,
           formData
         );
 
